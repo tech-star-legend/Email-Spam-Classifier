@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Analytics Dashboard</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="dashboard-container">
+
+        <h1 class="dashboard-title">
+
+            Analytics Dashboard
+
+        </h1>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Model Accuracy Comparison
+
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='charts/accuracy.png') }}"
+                        class="img-fluid"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Dataset Distribution
+
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='charts/dataset_distribution.png') }}"
+                        class="img-fluid"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Confusion Matrix
+
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='charts/confusion_matrix.png') }}"
+                        class="img-fluid"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Important Spam Keywords
+
+                    </h3>
+
+                    <img
+                        src="{{ url_for('static', filename='charts/spam_words.png') }}"
+                        class="img-fluid"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a
+                href="/"
+                class="btn back-btn"
+            >
+
+                Back to Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
